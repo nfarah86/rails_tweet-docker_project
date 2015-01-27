@@ -7,31 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<header class ="navbar navbar-fixed-top navbar-inverse">
-		<div class = "container">
-			<%= link_to 'RoboTweet', root_path, id: "logo" %>
-			<nav>
-				<ul class = "nav navbar-nav navbar-right">
-					<li><%= link_to "Home", root_path %></li>
-					<li><%= link_to "Help", help_path %></li>
-					<li><%= link_to "Log in",   '#' %></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<%= render 'layouts/header' %>
+	
 	<div class = "container">
-
 		<%= yield %>
 	</div>
 
-<footer class = "footer">
-	<nav>
-		<ul>
-			<li> <%= link_to "About", about_path %></li>
-			<li> <%= link_to "Help", help_path %></li>
-		</ul>
-	</nav>
-</footer>
+	<%= render 'layouts/footer' %>
 			
 </body>
 </html>

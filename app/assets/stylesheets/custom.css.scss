@@ -18,7 +18,32 @@ textarea{
 	resize:vertical;
 }
 
+
+/*  typography  */
+h1{
+	font-size:3em;
+	letter-spacing:-3px;
+	margin-bottom:30px;
+	text-align:center;
+}
+h5{
+	text-align:right;
+	font-size:1.2em;
+	letter-spacing: -1px;
+	margin-bottom:30px;
+	color:#777;
+}
+
  
+
+ /* image */
+#image{
+	width:50px;
+	height:auto;
+	margin-top:5px;
+}
+
+
 /* footer */
 footer{
 margin-top: 45px;

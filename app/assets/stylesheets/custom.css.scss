@@ -79,6 +79,43 @@ footer ul li{
 	margin-left:15px;
 	margin-right:15px;
 }
+aside{
+section.user_info{
+	margin-top:20px
+	}
+section{
+	padding: 10px 0;
+	margin-top: 20px;
+	background-color:red;
+	&:first-child{
+	border:0;
+		}	
+	h1{
+	font-size: 1.4em;
+	text-align:left;
+	letter-spacing: -1px;
+	margin-bottom: 3px;
+	}
+  }
+
+}
+
+.gravatar{
+	float:left;
+	margin-right: 10px;
+}
+
+.gravatar_edit{
+	margin-top:15px;
+}
+
+
+
+
+
+
+
+
 
 /* miscellaneous */
 

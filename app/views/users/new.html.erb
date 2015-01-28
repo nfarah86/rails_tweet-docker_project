@@ -1,3 +1,38 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
-<p> Users Sign up page</p>
+<h1>Sign Up</h1>
+
+	<%= form_for(@user) do |f| %>
+
+		<div class= "labelName" >
+			<%= f.label :name, "Name" %>
+		</div>
+		<div class= "textField">
+			<%= f.text_field :name %>
+		</div>
+
+		<div class= "labelName" >
+			<%= f.label :email, "Email"%>
+		</div>
+
+		<div class= "textField">
+			<%= f.email_field :email %>
+		</div>
+
+		<div class= "labelName" >
+			<%= f.label :password, "RoboPassword" %>
+		</div>
+		<div class= "textField">
+			<%= f.password_field :password %>
+		</div>
+
+		<div class= "labelName" >
+		<%= f.label :password_confirmation, "RoboPassword Confirmation" %>
+		</div>
+		<div class= "textField">
+			<%= f.password_field :password_confirmation, class: "textField" %>
+		
+				</br>
+
+			<%= f.submit "Lets RoboTweet", class: "btn btn-primary"  %>
+		</div>
+		<% end %>

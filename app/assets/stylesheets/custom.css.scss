@@ -86,7 +86,6 @@ section.user_info{
 section{
 	padding: 10px 0;
 	margin-top: 20px;
-	background-color:red;
 	&:first-child{
 	border:0;
 		}	
@@ -109,11 +108,23 @@ section{
 	margin-top:15px;
 }
 
+/* form */
 
 
 
+.labelName{
+	margin-bottom: 2px;
+	text-align:center;
+}
+.textField{
+	margin-bottom: 20px;
+	text-align:center;
+}
 
-
+.btn btn-primary{
+	margin-left: 40px;
+	background-color:red;
+}
 
 
 

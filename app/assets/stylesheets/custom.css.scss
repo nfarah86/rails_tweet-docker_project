@@ -27,8 +27,10 @@ textarea{
 	resize:vertical;
 }
 
+/*  #####################################  */
 
-/*  typography  */
+			/*  typography  */
+
 h1{
 	font-size:3em;
 	letter-spacing:-3px;
@@ -43,17 +45,20 @@ h5{
 	color:#777;
 }
 
- 
+ /*  #####################################  */
 
- /* image */
+ 				/* image */
+
 #image{
 	width:50px;
 	height:auto;
 	margin-top:5px;
 }
 
+/*  #####################################  */
 
-/* footer */
+			/* footer */
+
 footer{
 margin-top: 45px;
 padding-top: 5px;
@@ -108,9 +113,11 @@ section{
 	margin-top:15px;
 }
 
-/* form */
 
 
+/*  #####################################  */
+
+				/* form */
 
 .labelName{
 	margin-bottom: 2px;
@@ -123,12 +130,24 @@ section{
 
 .btn btn-primary{
 	margin-left: 40px;
-	background-color:red;
+	color:red;
+}
+
+#error_handeling{
+	text-align: center;
+	width: 50em;
+	margin: auto;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+   	word-spacing:-10px;
+  }
 }
 
 
+/*  #####################################  */
 
-/* miscellaneous */
+			/* miscellaneous */
 
 .debug_dump {
   clear: both;

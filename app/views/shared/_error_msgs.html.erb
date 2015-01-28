@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+  <div id="error_handeling">
+    <div class="alert alert-danger" role= "alert">
+		  The RoboForm contains <%= pluralize(@user.errors.count, "error") %>
+    </div>
+    <ul>
+    	<% @user.errors.full_messages.each do |msg| %>
+     		<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"><%= msg %></span></br>
+    	<% end %>
+    </ul>
+  </div>
+<% end %>

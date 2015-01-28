@@ -2,6 +2,7 @@
 <h1>Sign Up</h1>
 
 	<%= form_for(@user) do |f| %>
+		<%= render "shared/error_msgs" %>
 
 		<div class= "labelName" >
 			<%= f.label :name, "Name" %>

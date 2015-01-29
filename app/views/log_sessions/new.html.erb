@@ -1,0 +1,25 @@
+<% provide(:title, 'Log in') %>
+
+<h1> RoboLog In </h1>
+
+<%= form_for(:session, url: login_path) do |f| %>
+	<div class= "labelName" >
+			<%= f.label :email, "Email" %>
+		</div>
+		<div class= "textField">
+			<%= f.text_field :email %>
+		</div>
+
+		<div class= "labelName" >
+			<%= f.label :password, "RoboPassword" %>
+		</div>
+		<div class= "textField">
+			<%= f.password_field :password %>
+
+		</br>
+	</br>
+		<%= f.submit "Lets RoboTweet", class: "btn btn-primary" %>
+		</div>
+
+		<% end %>
+

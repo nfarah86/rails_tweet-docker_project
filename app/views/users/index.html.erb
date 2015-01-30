@@ -1,13 +1,17 @@
 <% provide(:title, 'All RoboUsers') %>
-
 <h1> All Available RoboUsers </h1>
 
-<ul class = "users">
-	<% @users.each do |user| %>
-		<l1>
-			<%= gravatar_for user, size:50 %>
-			<%= link_to user.name, user %>
-		</li>
-	<% end %>
 
+<ul class="users">
+  <% @users.each do |user| %>
+    <li>
+      <%= gravatar_for user, size: 50 %>
+      <%= link_to user.name, user %>
+       <% if current_user_in_session.admin && !current_user?(user) %>
+    | <%= link_to "delete", user, method: :delete,
+                                  data: { confirm: "So, you sure you want to delete a RoboUser?" } %>
+  <% end %>
+    </li>
+  <% end %>
 </ul>
+

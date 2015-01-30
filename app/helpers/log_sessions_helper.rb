@@ -5,12 +5,9 @@ module LogSessionsHelper
 	end
 
 	def current_user_in_session
-		if @current_user.nil?
-			@current_user = User.find_by(id: session[:user_id])
-		else
-			@current_user
+		@current_user ||= User.find_by(id: session[:user_id])
+		
 		end
-	end
 
 	def user_is_logged_in
 		!current_user_in_session.nil?
@@ -22,7 +19,7 @@ module LogSessionsHelper
 	end
 
 	def current_user?(user)
-		user == current_user
+		user == current_user_in_session
 	end
 
 	def store_location

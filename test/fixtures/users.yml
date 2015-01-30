@@ -6,6 +6,6 @@
 
 
 Minnie:
-	name: Minnie
-	email: Minnie@Disneyland.com
-	password_digest: <%= User.digest('password') %>
+  name: Minnie
+  email: Minnie@Disneyland.com
+  password_digest: <%= User.digest('password') %>

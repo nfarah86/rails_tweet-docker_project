@@ -6,7 +6,7 @@ class LogSessionsController < ApplicationController
  	user = User.find_by(email: params[:session][:email].downcase)
  	if user && user.authenticate(params[:session][:password])
  		log_in user
- 		redirect_to user
+ 		redirect_user user
  	else
  		flash.now[:danger] = "Sorry, Password or Email is incorrect"
  		render 'new'

@@ -4,6 +4,8 @@
 #   name: MyString
 #   email: MyString
 
-# two:
-#   name: MyString
-#   email: MyString
+
+Minnie:
+	name: Minnie
+	email: Minnie@Disneyland.com
+	password_digest: <%= User.digest('password') %>

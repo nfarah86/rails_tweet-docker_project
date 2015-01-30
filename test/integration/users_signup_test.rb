@@ -25,6 +25,6 @@ test "user signed up correctly" do
 			}
 		end
 	assert_template "users/show"
-end
+	end
 
 end

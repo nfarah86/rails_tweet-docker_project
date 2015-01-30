@@ -11,4 +11,13 @@ module LogSessionsHelper
 			@current_user
 		end
 	end
+
+	def user_is_logged_in
+		!current_user_in_session.nil?
+	end
+
+	def log_out
+		session.delete(:user_id)
+		@current_user = nil
+	end
 end

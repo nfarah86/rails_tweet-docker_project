@@ -29,7 +29,7 @@ textarea{
 
 /*  #####################################  */
 
-			/*  typography  */
+			/*  font stuff */
 
 h1{
 	font-size:3em;
@@ -48,7 +48,8 @@ h5{
  
 /*  #####################################  */
 
-			/*  _header  */
+			/*  _header.html.erb  */
+
 #alert_messages{
 	text-align: center;
 	width: 50em;
@@ -56,22 +57,18 @@ h5{
 
 	}
 
-
-
-
- /*  #####################################  */
-
- 				/* image */
-
 #image{
 	width:50px;
 	height:auto;
 	margin-top:5px;
 }
 
+
+
+
 /*  #####################################  */
 
-			/* _footer */
+			/* _footer.html.erb */
 
 footer{
 margin-top: 45px;
@@ -131,7 +128,7 @@ section{
 
 /*  #####################################  */
 
-				/* form */
+				/* new.html.erb */
 
 .labelName{
 	margin-bottom: 2px;

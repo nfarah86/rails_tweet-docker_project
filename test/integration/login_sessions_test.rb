@@ -2,7 +2,7 @@ require 'test_helper'
 
 class LoginSessionsTest < ActionDispatch::IntegrationTest
   
-
+def setup
 
  test "login with invalid information" do
     get login_path

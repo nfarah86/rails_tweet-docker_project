@@ -9,5 +9,13 @@
 			</h1>
 		</section>
 	</aside>
+
+	<% if @user.posts.any? %>
+		<h3> RoboPosts (<%= @user.posts.count %></h3>
+		<ol class = 'posts'>
+			<%= render @posts %>
+		</ol>
+		<% end %>
+	</div>
 </div>
 

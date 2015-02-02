@@ -19,6 +19,13 @@ Rails.application.routes.draw do
 
   delete 'logout' => 'log_sessions#destroy'
 
+  post '/write', to: 'json_handler#create'
+
+  get '/read', to: 'public#display'
+
+
+
+
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
